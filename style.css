@@ -1,0 +1,377 @@
+body,p,span{
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: "Rubik", sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.grybg{
+    background: #f9fafb;
+}
+
+/* Begain Custom Style */
+body .btn-primary{
+    background-color: #e83b3e !important;
+    border-color: #e83b3e;
+    font-size: 16px;
+    padding: 10px 40px;
+
+    position: relative;
+    z-index: 1;
+}
+body .btn-primary:hover{
+    border-color: #111;
+}
+
+body .btn-primary::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: .5s;
+}
+body .btn-primary:hover::after{
+    width: 100%;
+}
+/* Header CSS Start */
+.main-header .container-fluid,
+.slider-section .container-fluid{
+    max-width: 1480px;
+}
+
+/* menu */
+.main-header{
+    background: #fff;
+}
+ul.our-primary-menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 16px;
+    color: #111;
+    font-weight: 500;
+    transition: .5s;
+}
+ul.our-primary-menu > li:hover a{
+    color: #e83b3e;
+    transform: scaleX(1.1);
+}
+
+/* Dropdown Menu CSS Start */
+ul.our-primary-menu li{
+    position: relative;
+}
+ul.our-primary-menu li ul{
+    position: absolute;
+    width: 220px;
+    left: 0;
+    top: 160%;
+    background: #fafafa;
+    list-style: none;
+    padding: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+ul.our-primary-menu li ul li{
+    flex-direction: column;
+}
+ul.our-primary-menu li ul li a{
+    color: #000 !important;
+    transition: .5s;
+}
+ul.our-primary-menu li ul li a:hover{
+    color: #e83b3e !important;
+    transform: scale(1.12) !important;
+}
+
+/* Dropdown Hover */
+ul.our-primary-menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 120%;
+}
+
+/* Dropdown Menu CSS End */
+
+
+.header-info{}
+.header-search{
+    width: 60px;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+
+}
+.header-call{
+    width: 225px;
+}
+.header-call-icon{
+    font-size: 33px;
+    color: #e83b3e;
+}
+.header-call-info span{
+    color: #606060;
+}
+.header-call-info a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #111;
+}
+.header-btn{}
+/* Header CSS End */
+
+
+/* Slider CSS Start */
+.slider-section{
+    background: url(./assets/asset\ 19.jpeg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider-content h6{
+    color: #e83b3e;
+}
+
+.slider-content h1{
+    font-size: 62px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.slider-content p{
+    color: #606060;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.slider-content-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slider-social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.slider-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.slider-social ul li{}
+.slider-social ul li span{
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 50px;
+    position: relative;
+}
+.slider-social ul li span::after{
+    content: " ";
+    width: 35px;
+    height: 1px;
+    background: #111;
+    position: absolute;
+    top: 51%;
+    right: -45px;
+}
+.slider-social ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 14px;
+    color: #111;
+    font-size: 19px;
+}
+/* Slider CSS End */
+
+
+
+/******* Logo section CSS Start *******/
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.clint-logo ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/******* Logo Section CSS End *******/
+
+
+
+/****** About Section CSS Start ******/
+.about-image{
+    position: relative;
+}
+.about-img-text{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    background: url(./assets/asset\ 20.png);
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img-text h2{
+    color: #e83b3e;
+    font-weight: 500;
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.about-img-text p{}
+
+
+.finix-text h6{
+    color: #e83b3e;
+    font-weight: 400;
+}
+.finix-text h2{
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.finix-text p{
+    color: #606060;
+    font-size: 18px;
+}
+.finix-text strong{
+    font-size: 20px;
+    color: #606060;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.finix-text ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.finix-text ul li{
+    padding: 5px 0;
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: FontAwesome;
+    color: #e83b3e;
+    display: inline-block;
+    margin-right: 10px;
+       
+}
+
+/****** About Section CSS End ******/
+
+
+/* Why Choose Us CSS Start */
+.finix-text{
+    position: relative;
+}
+.play-animation-btn{
+    height: 90px;
+    width: 90px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 90px;
+    background: #fff;
+    color: #e83b3e;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    right: 40%;
+    bottom: 50px;
+}
+
+/* Animation */
+.play-animation-btn::before{
+    content: " ";
+    height: 90px;
+    width: 90px;
+    background: #e83b3e;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: palybtn 1.6s ease-out infinite;
+    
+}
+@keyframes palybtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.features-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+.features-item:hover{
+    transform: translateY(-13px);
+}
+.features-item:hover .ft-icon i{
+    color: #fff;
+    background: #e83b3e;
+}
+.features-item::before{
+    content: "";
+    position: absolute;
+    top: -140px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 90%;
+    height: 70%;
+    background: #fdebeb;
+    border-radius: 50%;
+}
+.features-item .ft-icon i{
+    position: relative;
+    color: #e83b3e;
+    font-size: 32px;
+    background: #fff;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.mtop4{
+    margin-top: -30px;
+}
+
+/* Why Choose Us CSS End */
