@@ -540,3 +540,137 @@ ul.our-primary-menu li:hover ul{
 
 
 /* Service Section CSS End */
+
+
+/* Client Testimonial CSS Start */
+.testimonial-slider-holder{}
+.slider p{
+    font-size: 24px;
+    color: #111111;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.slider h3{
+    color: #e83b3e;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.slider span{
+    color: #606060;
+}
+.client-img{
+    position: relative;
+}
+.client-img .icon i{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    background: #fff;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.09);
+    text-align: center;
+    font-size: 50px;
+    color: #e83b3e;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 49px;
+    left: 97px;
+    transition: .5s;
+}
+.client-img .icon i:hover{
+    background: #e83b3e;
+    color: #fff;
+}
+
+
+.testimonial-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.testimonial-slider-holder{
+    display: grid;
+    grid-template-columns: repeat(3, 101%);
+    height: 100%;
+    width: 100%;
+    animation: slider 20s ease-in-out infinite ;
+}
+
+
+.button-holder .button{
+    text-decoration: none;
+    display: block;
+    background: #e83b3e;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #e83b3e;
+    border-radius: 50%;
+    margin: .5rem;
+}
+.button-holder{
+    display: inline-block;
+    position: absolute;
+    right: -1139px;
+    bottom: 169px;
+}
+
+@keyframes slider{
+    5%{transform: translateX(-100%);}
+    155%{transform: translateX(-100%);}
+    33.3%{transform: translateX(-100%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    66.6%{transform: translateX(-200%);}
+    
+      
+}
+/* Client Testimonial CSS End */
+
+
+/* Team Section CSS Start */
+.team-member{
+    position: relative;
+}
+.tmember-img img{
+    
+}
+.tmember-img .tsocial-icon{
+    position: absolute;
+    left: 60px;
+  bottom: 97px;
+}
+.tmember-img .tsocial-icon i{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+    display: inline-block;
+    transition: .6s;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.tmember-img:hover i{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.tmember-info {}
+.tmember-info h4{
+    color: #e83b3e;
+}
+.tmember-info p{
+    color: #606060;
+    font-size: 18px;
+}
+
+
+/* Team Section CSS End */
+
